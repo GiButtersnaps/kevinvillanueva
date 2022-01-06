@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import Sidebar from './components/sidebar/sidebar';
+// import React from 'react';
+import React, { Component } from 'react';
+import { makeStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
+import Mainpage from "./components/mainpage/mainpage";
+import Menubar from "./components/menubar/menubar";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='vertical-container'>
+        <Menubar></Menubar>
+        <div className='horizontal-container'>
+          <Mainpage></Mainpage>
+        </div>
+      </div>
+      
+     
     </div>
   );
 }

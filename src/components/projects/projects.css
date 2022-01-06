@@ -1,0 +1,27 @@
+.Projects{
+    height:100%;
+    width:100%;
+}
+
+.linux{
+    display: flex;
+    justify-content: center;
+}
+#vm_container{
+    /* background-color: black; */
+    width: 850.2px;
+    height: 420px;
+}
+/* can probably get rid of the vm container constraints
+ */
+
+#vm_text_mode{
+    white-space: pre;
+    font: 14px monospace; 
+    line-height: 14px;
+}
+
+
+#vm_graphics_mode{
+    display: none
+}

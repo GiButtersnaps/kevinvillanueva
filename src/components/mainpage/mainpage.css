@@ -1,0 +1,10 @@
+.mainpage{
+    min-height: 100%;
+    width: 100%;
+    background-color: #BBBBBB;
+    border-radius: 0px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    display: flex;
+}
