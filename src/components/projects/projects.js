@@ -14,6 +14,9 @@ export default class Projects extends Component {
                 <canvas id="vm_graphics_mode" ></canvas>
             </div>
         </div>
+        <div>
+            
+        </div>
 
         {/* <div style="width: 75%; margin: auto;">
             <h2>Contributors</h2>
