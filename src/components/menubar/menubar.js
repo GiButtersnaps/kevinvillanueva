@@ -15,10 +15,26 @@ export default class Menubar extends Component {
 
             <div className='links'>
                 {/* <Link className="betterLink" to="/">Home </Link> */}
-                <a class="betterLink" href="/">Home </a>
-                <Link className="betterLink" to="/about">About Me </Link>
-                <Link className="betterLink" to="/projects">Projects</Link>
-                <Link  className="betterLink" to="/contact">Contact Me</Link>
+                <a class="betterLink" href="/"> 
+                <div className="link-text">
+                   Home
+                  </div> 
+                   </a>
+                <Link className="betterLink" to="/about">
+                  <div className="link-text">
+                    About
+                  </div>  
+                </Link>
+                <Link className="betterLink" to="/projects">
+                  <div className="link-text">
+                    Projects
+                  </div> 
+                  </Link>
+                <Link  className="betterLink" to="/contact">
+                  <div className="link-text">
+                    Contact Me
+                  </div> 
+                </Link>
             </div>
             
         </div>
