@@ -6,8 +6,10 @@ import "./mainpage.css"
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Contact from "../Contact/contact";
 import About from "../About/about";
+import LinuxOS from "../linuxos/linuxos";
 import Projects from "../projects/projects";
 import Home from "../Home/home";
+
 
 
 
@@ -18,8 +20,11 @@ export default class Mainpage extends Component {
             <Routes>
                 <Route path="/" element={<Home/>} exact />
                 <Route path="/about" element={<About/>} />
-                <Route path="/projects" element={<Projects/>} />
+                <Route path="/projects/391OS" element={<LinuxOS/>} exact/>
+                <Route path="/projects" element={<Projects/>} exact />
                 <Route path="/contact" element={<Contact/>} />
+
+                
 
             </Routes>
         </div>

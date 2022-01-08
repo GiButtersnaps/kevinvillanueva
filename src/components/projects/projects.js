@@ -3,21 +3,78 @@ import {Container, Row, Col} from 'react-bootstrap';
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import "./projects.css"
+import HoverVideoPlayer from 'react-hover-video-player';
+import {Link} from "react-router-dom";
 
 export default class Projects extends Component {
   render() {
     return (
         <div className="Projects">
-            <div className="linux">
-            <div id="vm_container">
-                <div id="vm_text_mode" ></div>
-                <canvas id="vm_graphics_mode" ></canvas>
+            {/* <div className="linux">
+                <div id="vm_container">
+                    <div id="vm_text_mode" ></div>
+                    <canvas id="vm_graphics_mode" ></canvas>
+                </div>
+            </div> */}
+            <div className='ProjectCards'>
+                <Link className='betterLink' to="/projects/391OS">
+                <div className='projectCard'>
+                    <HoverVideoPlayer
+                        className='projectVideo'
+                        videoSrc="videos/391osVid.mp4"
+                        loadingOverlay={
+                            <div className="loading-overlay">
+                            <div className="loading-spinner" />
+                            </div>
+                        }
+                    />
+                    Linux Based Operating System
+                </div>
+                </Link>
+                <Link className='betterLink' to="/projects/391OS">
+                <div className='projectCard'>
+                    <HoverVideoPlayer
+                        className='projectVideo'
+                        videoSrc="videos/391osVid.mp4"
+                        loadingOverlay={
+                            <div className="loading-overlay">
+                            <div className="loading-spinner" />
+                            </div>
+                        }
+                    />
+                    Linux Based Operating System
+                </div>
+                </Link>
+                <Link className='betterLink' to="/projects/391OS">
+                <div className='projectCard'>
+                    <HoverVideoPlayer
+                        className='projectVideo'
+                        videoSrc="videos/391osVid.mp4"
+                        loadingOverlay={
+                            <div className="loading-overlay">
+                            <div className="loading-spinner" />
+                            </div>
+                        }
+                    />
+                    Linux Based Operating System
+                </div>
+                </Link>
+                <Link className='betterLink' to="/projects/391OS">
+                <div className='projectCard'>
+                    <HoverVideoPlayer
+                        className='projectVideo'
+                        videoSrc="videos/391osVid.mp4"
+                        loadingOverlay={
+                            <div className="loading-overlay">
+                            <div className="loading-spinner" />
+                            </div>
+                        }
+                    />
+                    Linux Based Operating System
+                </div>
+                </Link>
             </div>
-        </div>
-        <div>
-            
-        </div>
-
+           
         {/* <div style="width: 75%; margin: auto;">
             <h2>Contributors</h2>
             <p>

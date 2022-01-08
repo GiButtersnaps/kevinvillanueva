@@ -1,0 +1,29 @@
+.Projects{
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.linux{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+#vm_container{
+    
+    width: 850.2px;
+    height: 420px;
+}
+
+
+#vm_text_mode{
+    white-space: pre;
+    font: 14px monospace; 
+    line-height: 14px;
+}
+
+
+#vm_graphics_mode{
+    display: none
+}
