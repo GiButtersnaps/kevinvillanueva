@@ -11,7 +11,7 @@ export default class LinuxOS extends Component {
     return (
         <div className="Projects">
             <div className="linux">
-                <div id="vm_container">
+                <div id="linux_container">
                     <div id="vm_text_mode" ></div>
                     <canvas id="vm_graphics_mode" ></canvas>
                 </div>

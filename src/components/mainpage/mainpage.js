@@ -20,7 +20,7 @@ export default class Mainpage extends Component {
             <Routes>
                 <Route path="/" element={<Home/>} exact />
                 <Route path="/about" element={<About/>} />
-                <Route path="/projects/391OS" element={<LinuxOS/>} exact/>
+                <Route path="/391OS" element={<LinuxOS/>} />
                 <Route path="/projects" element={<Projects/>} exact />
                 <Route path="/contact" element={<Contact/>} />
 
