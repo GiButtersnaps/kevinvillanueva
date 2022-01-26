@@ -17,7 +17,7 @@ export default class Projects extends Component {
                 </div>
             </div> */}
             <div className='ProjectCards'>
-                <Link className='betterLink' to="/391OS">
+                <Link className='card_link' to="/391OS">
                 <div className='projectCard'>
                     <HoverVideoPlayer
                         className='projectVideo'
@@ -31,7 +31,7 @@ export default class Projects extends Component {
                     Linux Based Operating System
                 </div>
                 </Link>
-                <Link className='betterLink' to="/391OS">
+                <Link className='card_link' to="/projects/AutoBoard">
                 <div className='projectCard'>
                     <HoverVideoPlayer
                         className='projectVideo'
@@ -45,7 +45,7 @@ export default class Projects extends Component {
                     Linux Based Operating System
                 </div>
                 </Link>
-                <Link className='betterLink' to="/391OS">
+                <Link className='card_link' to="/391OS">
                 <div className='projectCard'>
                     <HoverVideoPlayer
                         className='projectVideo'
@@ -59,7 +59,7 @@ export default class Projects extends Component {
                     Linux Based Operating System
                 </div>
                 </Link>
-                <Link className='betterLink' to="/391OS">
+                <Link className='card_link' to="/391OS">
                 <div className='projectCard'>
                     <HoverVideoPlayer
                         className='projectVideo'

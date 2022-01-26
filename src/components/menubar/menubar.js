@@ -4,8 +4,21 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import {Link} from "react-router-dom";
 import "./menubar.css"
+import Hamburger from 'hamburger-react';
+
+
 
 export default class Menubar extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {isOpen: false,
+    setOpen: false};
+  }
+  
+  // handle_hamburger(){
+   
+  // }
   render() {
     return (
         <div className='menubar'>
@@ -15,7 +28,7 @@ export default class Menubar extends Component {
 
             <div className='links'>
                 {/* <Link className="betterLink" to="/">Home </Link> */}
-                <a class="betterLink" href="/"> 
+                <a className="betterLink" href="/"> 
                 <div className="link-text">
                    Home
                   </div> 
@@ -37,11 +50,17 @@ export default class Menubar extends Component {
                 </Link>
             </div>
             <div class="dropdown">
-              <span>Mouse over me</span>
-                <div class="dropdown-content">
-                  <p>Hello World!</p>
-              </div>
+              <Hamburger  color="white" onToggle={() => {
+                   this.props.setOpen()
+                  }} />
+               {/* <Hamburger  color="white" toggled={this.props.isOpen} toggle={this.props.setOpen()} /> */}
+                
+              {/* <button onClick={ this.state.isOpen = !this.state.isOpen}>
+                <img className='hamburger' src='./images/hamburger.png'/>
+              </button> */}
+
             </div>
+            
         </div>
         
         

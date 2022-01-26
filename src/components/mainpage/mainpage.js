@@ -9,7 +9,7 @@ import About from "../About/about";
 import LinuxOS from "../linuxos/linuxos";
 import Projects from "../projects/projects";
 import Home from "../Home/home";
-
+import AutoBoard from "../Autoboard/autoboard";
 
 
 
@@ -23,6 +23,8 @@ export default class Mainpage extends Component {
                 <Route path="/391OS" element={<LinuxOS/>} />
                 <Route path="/projects" element={<Projects/>} exact />
                 <Route path="/contact" element={<Contact/>} />
+                <Route path="/projects/AutoBoard" element={<AutoBoard/>} />
+
 
                 
 

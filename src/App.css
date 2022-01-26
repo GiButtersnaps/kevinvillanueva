@@ -64,3 +64,55 @@
 .main-row{
   height: 100vh;
 } */
+
+.mobile_links{
+  width:100%;
+  /* padding-top: 1%; */
+  /* padding-bottom: 1%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+
+
+}
+
+/
+
+.betterLink{
+  text-decoration: none;
+}
+
+.link-text{
+  display: flex;
+  text-decoration: none;
+  text-align: center !important;
+  vertical-align: middle;
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+}
+
+.link-text:hover {
+  color: black;
+}
+
+
+@media only screen and (min-width: 768px){
+
+  .mobile_links{
+      width:40%;
+      /* padding-top: 1%; */
+      /* padding-bottom: 1%; */
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      
+  
+  
+  }
+  
+  
+}
